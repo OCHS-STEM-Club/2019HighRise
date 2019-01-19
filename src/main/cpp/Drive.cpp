@@ -13,20 +13,16 @@ DriveManager::DriveManager () {
     slaveMotorRight2 = new WPI_TalonSRX(6);
 
   tankDrive = new frc::DifferentialDrive(*driveMotorLeft, *driveMotorRight);
-  tankDrive1 = new frc::DifferentialDrive(*slaveMotorLeft1, *slaveMotorRight1);
-  tankDrive2 = new frc::DifferentialDrive(*slaveMotorLeft2, *slaveMotorRight2);
 
     xStickValue = new double; 
     yStickValue = new double; 
+
+    slaveMotorLeft1->Follow(*driveMotorLeft);
+    slaveMotorLeft2->Follow(*driveMotorLeft);
+
+    slaveMotorRight1->Follow(*driveMotorRight);
+    slaveMotorRight2->Follow(*driveMotorRight);
 }
-
-//*slaveMotorLeft1->Set(ControlMode::Follower, 1);
-//*slaveMotorLeft2->Set(ControlMode::Follower, 1);
-
-//*slaveMotorRight1->Set(ControlMode::Follower, 4);
-//*slaveMotorRight2->Set(ControlMode::Follower, 4);
-
-//*slaveMotorLeft1->Set(ControlMode::Follower, 1);
 
 void DriveManager::driveTrain() {
     *xStickValue = -stick->GetRawAxis(1);
@@ -34,6 +30,4 @@ void DriveManager::driveTrain() {
 
 
     tankDrive->ArcadeDrive(*xStickValue, *yStickValue);
-    tankDrive1->ArcadeDrive(*xStickValue, *yStickValue);
-    tankDrive2->ArcadeDrive(*xStickValue, *yStickValue);
 }

@@ -21,8 +21,6 @@ class DriveManager {
     WPI_TalonSRX *slaveMotorRight2;
 
     frc::DifferentialDrive *tankDrive;
-    frc::DifferentialDrive *tankDrive1;
-    frc::DifferentialDrive *tankDrive2;
 
     double *xStickValue;
     double *yStickValue;
