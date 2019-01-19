@@ -1,0 +1,4 @@
+See file:///C:/Users/1792r/Documents/DeepSpace/2019-Highrise/build/tmp/linkFrcUserProgramLinuxathenaReleaseExecutable/output.txt for all output for linkFrcUserProgramLinuxathenaReleaseExecutable.
+linking frcUserProgram successful.
+
+Finished linkFrcUserProgramLinuxathenaReleaseExecutable, see full log file:///C:/Users/1792r/Documents/DeepSpace/2019-Highrise/build/tmp/linkFrcUserProgramLinuxathenaReleaseExecutable/output.txt.

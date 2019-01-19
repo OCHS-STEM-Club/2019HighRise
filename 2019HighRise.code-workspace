@@ -1,0 +1,10 @@
+{
+	"folders": [],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "disabled",
+		"java.import.gradle.enabled": false,
+		"files.associations": {
+			"*.inc": "cpp"
+		}
+	}
+}
