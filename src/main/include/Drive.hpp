@@ -22,8 +22,8 @@ class DriveManager {
 
     frc::DifferentialDrive *tankDrive;
 
-    double *xStickValue;
-    double *yStickValue;
+    double xStickValue;
+    double yStickValue;
 
     public:
     DriveManager();
